@@ -1,0 +1,378 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo{
+    width: 200px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+nav ul li a:hover{
+    color: grey;
+}
+
+.content{
+    text-align: center;
+}
+.content h1{
+    font-size: 115px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.content h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.content a:hover{
+  color: grey;
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9 ){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9 ){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+/*  ------ SECTION 1: CLICK HERE! (slideshow) ------- */
+  .red{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    font-family: 'Bungee', cursive;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .gallery{
+    width: 900px;
+    display: flex;
+    overflow-x: scroll;
+  }
+  .gallery div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+  }
+  .gallery div img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: transform 0.5s;
+  }
+  .gallery::-webkit-scrollbar{
+    display: none;
+  }
+  .gallery-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+  }
+#beforeBtn, #nextBtn{
+  width: 50px;
+  cursor: pointer;
+}
+.gallery div img:hover{
+  filter: grayscale(0);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.cat{
+  position: relative;
+  bottom: 100px;
+}
+.cat p{
+  color: #fff ;
+}
+.cat a{
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-size: 15px;
+  border: 2px solid #fff;
+  padding: 10px 25px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.cat a:hover{
+  color: grey;
+}
+/* ----------- ABOUT ME ---------------- */
+.about{
+  width: 100%;
+  padding: 78px 0px;
+  background-color: #3b3a30;
+}
+.about img{
+  height: auto;
+  width: 300px;
+}
+.about-text{
+  width: 550px;
+}
+.main{
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.about-text h1{
+  color: #fff;
+  font-size: 50px;
+  text-transform:capitalize ;
+  margin-bottom: 20px;
+}
+.about-text h1:hover{
+ color: yellowgreen;
+}
+.about-text h5{
+  color: #fff;
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+span{
+  color: yellowgreen;
+}
+.about-text p{
+  color: #fbefcc ;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+@keyframes animate{
+  0%{
+    transform: translateY(100vh) scale(0);
+  }
+  100%{
+    transform: translateY(-10vh) scale(1);
+  }
+}
+/* ---------- EDUCATON LEVEL ------------- */
+.container{
+  width: 100%;
+  background-color: #3b3a30;
+}
+.container .row{
+  width: 70%;
+  margin: auto;
+}
+.container .row .header{
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+.container .row .header h1{
+  padding-top: 30px;
+  font-size: 45px;
+  color: rgb(203, 208, 193);
+}
+.container .row .header h1:hover{
+  color: yellowgreen;
+}
+.container .row .header p{
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: black;
+}
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.content .card{
+  flex:  1;
+  margin: 50px 20px;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+}
+.content .card img{
+  width: 125px;
+  height: auto;
+}
+.content .card h4{
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 18px;
+  color: #fbefcc;
+}
+.content .card p{
+  font-size: 13px;
+  color: #fff;
+  line-height: 1.5;
+  padding: 10px;
+}
+/* ---- FOOTER ----- */
+.footer{
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  width: 100vw;
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: #fff;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+.social{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.social li{
+  margin: 0 10px;
+}
+.social a{
+  text-decoration: none;
+  color: #fff;
+}
+.social a i{
+  font-size: 1.1rem;
+}
+.social a:hover i{
+  color: grey;
+}
+.footer-bottom{
+  background: #000;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+}
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+/* ---- MEME ---- */
+.new{
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+}
+.meme-generator{
+  text-align: center;
+}
+.meme-generator img{
+  height: 430px;
+  object-fit: cover;
+}
+.meme-generator .generate-meme-btn{
+  padding: 8px 20px;
+  border: #000;
+  border-left: 4px solid #222;
+  border-right: 4px solid #222;
+  margin: 24px 0;
+  font-size: 20px;
+  color: #161616;
+  background: #fff;
+  cursor: pointer;
+  transition: all 400ms ease ;
+}
+
+.meme-generator .generate-meme-btn:hover{
+  padding: 8px 36px;
+  border-left: 8px solid #222;
+  border-right: 8px solid #222;
+  letter-spacing: 3px;
+}
+.meme-generator .meme-author{
+  margin: 8px;
+}
+.meme-generator .meme-title{
+  color: #fff;
+}
